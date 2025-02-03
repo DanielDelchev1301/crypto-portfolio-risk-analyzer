@@ -66,3 +66,51 @@ analyzePortfolio(portfolio)
     console.error('Error:', error);
   });
 ```
+
+### Expected output:
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "asset": "bitcoin",
+      "volatility": "2.35%",
+      "sharpeRatio": "1.32",
+      "allocation": "50%",
+      "var95": "3.12%",
+      "cvar95": "4.25%",
+      "maxDrawdown": "12.54%",
+      "sortinoRatio": "1.67",
+      "riskSummary": "Risk Analysis for BITCOIN....."
+    },
+  ]
+}
+```
+
+## Functions
+
+`analyzePortfolio(portfolio)`
+
+This function performs the risk analysis for each asset in your portfolio.
+
+### Parameters:
+
+- `portfolio` (Array): An array of portfolio objects, where each object contains:
+    - `coinId` (String): The coin’s ID (e.g., 'bitcoin', 'ethereum').
+    - `allocation` (Number): The percentage of the total portfolio allocated to this coin.
+    - `days` (Number): The number of days to fetch historical data for risk calculations.
+    - `varConfidence` (Number, optional): The confidence level for Value at Risk (default is 0.95).
+    - `cvarConfidence` (Number, optional): The confidence level for Conditional VaR (default is 0.95).
+
+### Returns:
+
+- A Promise that resolves to an object with a `success` field and `data` field containing the risk analysis results.
+
+## Contributing
+
+If you’d like to contribute to this project, feel free to fork the repository, create a feature branch, and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
