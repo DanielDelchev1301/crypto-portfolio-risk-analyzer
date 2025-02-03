@@ -99,7 +99,7 @@ This function performs the risk analysis for each asset in your portfolio.
 - `portfolio` (Array): An array of portfolio objects, where each object contains:
     - `coinId` (String): The coin’s ID (e.g., 'bitcoin', 'ethereum').
     - `allocation` (Number): The percentage of the total portfolio allocated to this coin.
-    - `days` (Number): The number of days to fetch historical data for risk calculations.
+    - `days` (Number, optional): The number of days to fetch historical data for risk calculations (default is 30).
     - `varConfidence` (Number, optional): The confidence level for Value at Risk (default is 0.95).
     - `cvarConfidence` (Number, optional): The confidence level for Conditional VaR (default is 0.95).
 
