@@ -107,6 +107,15 @@ This function performs the risk analysis for each asset in your portfolio.
 
 - A Promise that resolves to an object with a `success` field and `data` field containing the risk analysis results.
 
+## Explain Risk Metrics
+
+- `Volatility` measures how much an asset's price fluctuates over a given period. It is calculated as the standard deviation of daily returns.
+- `Sharpe Ratio` measures the risk-adjusted return of an asset. It is calculated as the ratio of the asset's excess return over the risk-free rate to its volatility.
+- `Value at Risk (VaR)` estimates the maximum potential loss of an asset at a given confidence level over a specified time horizon.
+- `Conditional Value at Risk (CVaR)` estimates the expected loss of an asset beyond the VaR at a given confidence level.
+- `Max Drawdown` measures the maximum loss from a peak to a trough of an asset's value.
+- `Sortino Ratio` measures the risk-adjusted return of an asset using downside risk (volatility of negative returns) instead of total volatility.
+
 ## Contributing
 
 If you’d like to contribute to this project, feel free to fork the repository, create a feature branch, and submit a pull request with your changes.
