@@ -41,10 +41,4 @@ const analyzePortfolio = async (portfolio) => {
   return { success: true, data: analizedPortfolio };
 };
 
-const portfolio = [
-  { coinId: 'bitcoin', allocation: 50, days: 10 },
-  { coinId: 'ethereum', allocation: 30, varConfidence: 0.99 },
-  { coinId: 'litecoin', allocation: 20, cvarConfidence: 0.80 },
-];
-
-analyzePortfolio(portfolio).then((result) => console.log(result));
+module.exports = { analyzePortfolio };
