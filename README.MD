@@ -27,11 +27,13 @@ You can install the `crypto-portfolio-risk-analyzer` library via npm or yarn:
 
 ```bash
 npm install crypto-portfolio-risk-analyzer
+```
 
 ### Using yarn:
 
 ```bash
 yarn add crypto-portfolio-risk-analyzer
+```
 
 ---
 
@@ -63,3 +65,4 @@ analyzePortfolio(portfolio)
   .catch(error => {
     console.error('Error:', error);
   });
+```
