@@ -5,9 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "bitcoinmaxi",
   "license": "ISC",
-  "description": "",
+  "description": "A JavaScript library for analyzing and assessing the risk of cryptocurrency portfolios, including calculations for volatility, Sharpe ratio, VaR, CVaR, max drawdown, and Sortino ratio.",
+  "keywords": ["crypto", "portfolio", "risk-analyzer"],
   "dependencies": {
     "axios": "^1.7.9",
     "mathjs": "^14.2.0",
