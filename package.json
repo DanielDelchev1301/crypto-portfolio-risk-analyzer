@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "bitcoinmaxi",
-  "license": "ISC",
+  "license": "MIT",
   "description": "A JavaScript library for analyzing and assessing the risk of cryptocurrency portfolios, including calculations for volatility, Sharpe ratio, VaR, CVaR, max drawdown, and Sortino ratio.",
   "keywords": ["crypto", "portfolio", "risk-analyzer"],
   "dependencies": {
